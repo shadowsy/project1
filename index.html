@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>名探偵コナン</title>
 </head>
 
+<style>
+    body {
+        margin: 0;
+        background-color:#FFCCCC;
+    }
+    
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #FFFFCC
+;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-size: 24px;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #CCCCCC;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color:#CCCCFF;
+    color: #FF9999;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: #FF9999;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+</style>
 <body>
 
-</body>
+<ul class="sidenav">
+  <li><a class="active" href="login.html">Login</a></li>
+  <li><a href="Home.html"> Home</a></li>
 
+  <li><a href="TV series.html">TV series</a></li>
+  <li><a href="Music.html">Music</a></li>
+  <li><a href="Movie.html">Movie</a></li>
+  <li><a href="Contact us.html">Contact us</a></li>
+</ul>
+
+
+</div>
+
+</body>
 </html>
