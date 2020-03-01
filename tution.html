@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Welcom CIT 121 Program
+    </title>
+    <style type="text/css">
+        body {
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        #top {
+            background-color: darkkhaki;
+            height: 70px;
+            border-style: solid 10px;
+        }
+
+        #logo {
+            float: right;
+        }
+
+        #link {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            overflow: hidden;
+            /* background-color: darksalmon; */
+        }
+
+        #link li {
+            float: left;
+        }
+
+        #link li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 26px 50px;
+            text-decoration: none;
+        }
+
+        #link li a:hover:not(.active) {
+            background-color: darkslateblue;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+
+
+
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes caret {
+            60% {
+                border-right-color: transparent;
+            }
+        }
+
+        .threesolid {
+            width: 100%;
+            font-size: 70px;
+            color: cornsilk;
+            text-shadow: 0px 1px 0px #c0c0c0,
+                0px 2px 0px #b0b0b0,
+                0px 3px 0px #a0a0a0,
+                0px 4px 0px #909090,
+                0px 5px 10px rgba(0, 0, 0, .9);
+            margin: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            width: 1270px;
+            height: 170px;
+            margin: 0px auto;
+            overflow: hidden;
+            border: 10px black solid;
+        }
+
+        #picture {
+            width: 200%;
+            list-style: none;
+            height: 100%;
+            animation: picmove 8s linear infinite forwards;
+
+        }
+
+        @keyframes picmove {
+            from {
+                transform: translate(0);
+            }
+
+            to {
+                transform: translate(-1270px);
+            }
+        }
+
+        #picture img {
+            width: 250px;
+            height: 170px;
+            float: left;
+            border: 2px black solid;
+        }
+
+        #picture:hover {
+            animation-play-state: paused;
+        }
+
+        #title {
+            font-size: 60px;
+            font-family: fantasy;
+            -webkit-text-stroke: 1px cornflowerblue;
+            -webkit-text-fill-color: transparent;
+            height: 65px;
+
+        }
+
+        #subtitle {
+            background-color: darkkhaki;
+            width: 100%;
+            height: 40px;
+            font-family: Wawati SC;
+            margin: 0px;
+            /* border:1px; */
+        }
+
+        #press {
+            color: transparent;
+            background-color: black;
+            text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+            -webkit-background-clip: text;
+            font-size: 35px;
+        }
+
+
+        #paragraph {
+            font-size: 20px;
+            font-family: fantasy;
+            background-color: rgb(219, 219, 170);
+            margin: 20px;
+            border: 2px solid;
+            border-radius: 25px;
+        }
+
+        div.img {
+            margin: 2px;
+            border: 1px solid #000000;
+            height: auto;
+            width: auto;
+            float: left;
+            text-align: center;
+        }
+
+        div.img img {
+            display: flexbox;
+            margin: 10px;
+            border: 1px solid #ffffff;
+        }
+
+        /* div.img a:hover img { */
+        /* border: 1px solid #0000ff; */
+        /* } */
+
+        div.desc {
+            text-align: center;
+            font-weight: normal;
+            width: 240px;
+            margin: 2px;
+        }
+
+        #photogallery {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(171, 211, 235);
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 25px;
+
+
+        }
+
+        .caret::after {
+            content: "";
+            display: inline-block;
+            width: 2px;
+            height: 1em;
+            margin-bottom: -2px;
+            margin-left: -2px;
+            background-color: #333;
+            animation: blink-caret .5s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        p,
+        h1,
+        form,
+        button {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .spacer {
+            clear: both;
+            height: 1px;
+        }
+
+        /* ———– My Form ———– */
+        .myform {
+            margin: 0 auto;
+            width: 400px;
+            padding: 14px;
+        }
+
+        /* ———– stylized ———– */
+        #stylized {
+            border: solid 2px #b7ddf2;
+            background: #ebf4fb;
+        }
+
+        #stylized h1 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        #stylized p {
+            font-size: 11px;
+            color: #666666;
+            margin-bottom: 20px;
+            border-bottom: solid 1px #b7ddf2;
+            padding-bottom: 10px;
+        }
+
+        #stylized label {
+            display: block;
+            font-weight: bold;
+            text-align: right;
+            width: 140px;
+            float: left;
+        }
+
+        #stylized .small {
+            color: #666666;
+            display: block;
+            font-size: 11px;
+            font-weight: normal;
+            text-align: right;
+            width: 140px;
+        }
+
+        #stylized input {
+            float: left;
+            font-size: 12px;
+            padding: 4px 2px;
+            border: solid 1px #aacfe4;
+            width: 200px;
+            margin: 2px 0 20px 10px;
+        }
+
+        #stylized button {
+            clear: both;
+            margin-left: 150px;
+            width: 125px;
+            height: 31px;
+            background: #666666 url(img/button.png) no-repeat;
+            text-align: center;
+            line-height: 31px;
+            color: #FFFFFF;
+            font-size: 11px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.cslg.edu.cn/">
+        <img id="logo" src="image/logo.jpeg" width="90" height="90" />
+    </a>
+    <div class="threesolid">Welcome CIT 121 Program!</div>
+
+
+
+    <div id="top">
+        <ul id="link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="univeristy Introduction.html">U.S.Univeristy</a></li>
+            <li><a href="tution.html">Tution</a></li>
+            <li><a href="schoollife.html">School Life</a></li>
+
+        </ul>
+
+
+
+    </div>
+    <nav>
+        <ul id="picture">
+            <li><img src="image/person.JPEG" alt="reload"></li>
+            <li><img src="image/uwec.PNG" alt="reload"></li>
+            <li><img src="image/communicate.PNG" alt="reload"></li>
+            <li><img src="image/time.PNG" alt="reload"></li>
+            <li><img src="image/student.PNG" alt="reload"></li>
+            <li><img src="image/leader.jpg" alt="reload"></li>
+            <li><img src="image/share.JPG" alt="reload"></li>
+            <li><img src="image/hostfriend.JPG" alt="reload"></li>
+            <li><img src="image/academic.JPG" alt="reload"></li>
+            <li><img src="image/snow.jpg" alt="reload"></li>
+
+
+        </ul>
+    </nav>
+
+    <div id="middle">
+        <div id="title">Tution</div>
+        <div id="subtitle">
+            <p id="press">Low cost</p>
+        </div>
+        <p id="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;Chinese tuition fees and other ordinary students, study abroad, the
+            normal payment of domestic
+            tuition; During my study in the United States, I have to pay tuition, accommodation, food, medical
+            insurance, etc., which is about 30,000 us dollars per year. Application fee, service fee, handling fee, us
+            non-immigrant visa application fee of RMB 24,120 and project management fee of usd 3,000 are required.
+            Students of the program are required to pay a deposit of RMB 50,000 yuan for returning to China before going
+            abroad (to be fully returned without interest after returning to school).</p>
+        <p id="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;Students of the project will pay tuition fees for four years according
+            to the standard of ordinary students of changshu institute of technology. If excellent, you can also apply
+            for international scholarships and academic scholarships. During my stay in the United States, tuition,
+            accommodation, food and medical insurance will cost about 30,000 us dollars per year.</p>
+
+        <div id="subtitle">
+            <p id="press">Join Us</p>
+        </div>
+        <form action="" method="post" class="basic-grey">
+            <h1>Contact Form
+                <span>Please fill all the texts in the fields.</span>
+            </h1>
+            <label>
+                <span>Themplate :</span>
+                <select id="template" name="themplate" onchange="changeStyle();">
+                    <option value="basic-grey">basic-grey</option>
+                    <option value="elegant-aero">elegant-aero</option>
+                    <option value="smart-green">smart-green</option>
+                    <option value="white-pink">white-pink</option>
+                    <option value="bootstrap-frm">bootstrap-frm</option>
+                    <option value="dark-matter">dark-matter</option>
+                </select>
+            </label>
+            <label>
+                <span>Your Name :</span>
+                <input id="name" type="text" name="name" placeholder="Your Full Name" />
+            </label>
+            <label>
+                <span>Your Email :</span>
+                <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+            </label>
+
+            <label>
+                <span>Message :</span>
+                <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+            </label>
+            <label>
+                <span>Subject :</span><select name="selection">
+                    <option value="Job Inquiry">Job Inquiry</option>
+                    <option value="General Question">General Question</option>
+                </select>
+            </label>
+            <label>
+                <span>&nbsp;</span>
+                <input type="button" class="button" value="Send" />
+            </label>
+        </form>
+
+        <script>
+            function changeStyle() {
+                var template = document.getElementById("template");
+                var index = template.selectedIndex;
+                var templatevalue = template.options[index].value;
+                var templatecss = document.getElementById("templatecss");
+                templatecss.setAttribute("href", "css/" + templatevalue + ".css");
+                document.getElementsByTagName("form")[0].setAttribute("class", templatevalue);
+
+            
+        </script>
+
+
+        }
+        </script>
+        <div class="typing">
+            <span class="typing-text">这是一个传说中的打字动画</span>
+            <i class="caret"></i>
+        </div>
+        <script>
+            var box = document.getElementsByClassName('typing-text')[0];
+            var str = box.innerText;
+            var i = 0;
+            box.innerText = '';
+            var typing = setInterval(function () {
+                box.innerText += str[i++];
+                i >= str.length && clearInterval(typing);
+            }, 200);
+        </script>
+        <div id="photogallery">
+
+            <div class="img">
+                <img src="image/cit2.jpeg" alt="Klematis" width="220" height="90"></a>
+                <div class="desc">The spring view of CIT</div>
+            </div>
+            <div class="img">
+                <img src="image/cit3.jpeg" alt="Klematis" width="220" height="90"></a>
+                <div class="desc">The buildings of CIT</div>
+            </div>
+            <div class="img">
+                <img src="image/cit4.jpeg" alt="Klematis" width="220" height="90"></a>
+                <div class="desc">The library of CIT</div>
+            </div>
+            <div class="img">
+                <img src="image/cit6.jpg" alt="Klematis" width="220" height="90"></a>
+                <div class="desc">The graduates of CIT </div>
+            </div>
+        </div>
+        <div id="subtitle">
+            <p id="press">About 121 Program</p>
+        </div>
+        <p id="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;121 program is in the China association of education international
+            exchange (CEAIE), international education exchange center (CCIEE) and the American association of state
+            university and college work (AASCU) and management of the new type of higher education of China and the
+            United States two-way exchanges and cooperation projects, choose by CCIEE and AASCU conditions of China and
+            the United States public colleges and universities as a member of the program, specific teaching task.</p>
+        <div id="subtitle">
+            <p id="press">How does it work?</p>
+        </div>
+        <p id="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;The cooperation of CIT with university of Wisconsin
+            at Eau Claire, university of Minnesota Duluth,Southern Illinois university edwardsville, Troy
+            university hold
+            college credits mutual recognition of joint training program (double degree), using 2 + 1.5 + 0.5 training
+            mode, program according to the university students to develop joint training plan should be to study for two
+            years, the project students in the first three semesters at changshu institute of technology, the first four
+            to the seventh semester must work in the United States university two years, return the eighth term changshu
+            institute of technology, accord with requirement of a bachelor's degree in American university courses
+            completed, bachelor's degree from the university, the courses can meet the demands of changshu institute of
+            technology and a bachelor's degree graduation requirements, May obtain changshu institute of technology
+            bachelor's degree certificate, bachelor's degree certificate. If the student cannot go to study in the
+            United States, he/she shall be regarded as abandoning the joint training program of mutual recognition of
+            credits between China and foreign countries (double degree), and the student shall drop out.
+        </p>
+
+
+
+    </div>
+
+    <div id="bottom">
+        <h2 align="center">CIT 121 Program </h2>
+        <h3 align="center">99 Hushan Road | Changshu,China 215500 | 0512-52252110 </h3>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

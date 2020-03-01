@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Welcom CIT 121 Program
+	</title>
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="image/logo.jpeg">
+	<style type="text/css">
+	body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#top {
+    background-color: darkkhaki;
+    height: 70px;
+    border-style: solid 10px;
+}
+
+#logo {
+    float: right;
+}
+
+#link {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color: darksalmon; */
+}
+
+#link li {
+    float: left;
+}
+
+#link li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 26px 50px;
+    text-decoration: none;
+}
+
+#link li a:hover:not(.active) {
+    background-color: darkslateblue;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes caret {
+    60% {
+        border-right-color: transparent;
+    }
+}
+
+.threesolid {
+    width: 100%;
+    font-size: 70px;
+    color: cornsilk;
+    text-shadow: 0px 1px 0px #c0c0c0,
+        0px 2px 0px #b0b0b0,
+        0px 3px 0px #a0a0a0,
+        0px 4px 0px #909090,
+        0px 5px 10px rgba(0, 0, 0, .9);
+    margin: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 1270px;
+    height: 170px;
+    margin: 0px auto;
+    overflow: hidden;
+    border: 10px black solid;
+}
+
+#picture {
+    width: 200%;
+    list-style: none;
+    height: 100%;
+    animation: picmove 8s linear infinite forwards;
+
+}
+
+@keyframes picmove {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-1270px);
+    }
+}
+
+#picture img {
+    width: 250px;
+    height: 170px;
+    float: left;
+    border: 2px black solid;
+}
+
+#picture:hover {
+    animation-play-state: paused;
+}
+
+#title {
+    font-size: 60px;
+    font-family: fantasy;
+    -webkit-text-stroke: 1px cornflowerblue;
+    -webkit-text-fill-color: transparent;
+    height: 65px;
+
+}
+
+
+#subtitle {
+    background-color: darkkhaki;
+    width: 100%;
+    height: 40px;
+    font-family: Wawati SC;
+    margin: 0px;
+    /* border:1px; */
+}
+
+#press {
+    color: transparent;
+    background-color: black;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+    -webkit-background-clip: text;
+    font-size: 35px;
+}
+
+
+#paragraph {
+    font-size: 20px;
+    font-family: fantasy;
+    background-color: rgb(219, 219, 170);
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+#piclist {
+    width: 760px;
+    /*170*4+10*8*/
+    height: 220px;
+    /*190+边框*/
+    /* margin: 100px auto; */
+
+}
+
+.picbox {
+    float: left;
+    position: relative;
+    width: 170px;
+    height: 190px;
+    margin: 10px;
+    /*3d——双面效果*/
+    transform-style: preserve-3d;
+    transition: 5s;
+}
+
+.picbox:hover {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 170px;
+    height: 190px;
+}
+
+.front {
+    border: 2px solid #c7aea6;
+}
+
+.back {
+    /*让它成为背面，开始只显示正面*/
+    transform: rotateY(180deg);
+    background-color: #d9ecba;
+    border: 2px solid #fff;
+}
+
+.back h3 {
+    color: white;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(171, 211, 235);
+    width: 770px;
+    height: 215px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 25px;
+
+
+}
+
+	</style>
+
+	
+</head>
+
+<body>
+	<a href="http://www.cslg.edu.cn/">
+        <img id="logo" src="image/logo.jpeg" width="90" height="90"/>
+    </a>
+	<div class="threesolid">Welcome CIT 121 Program!</div>
+	<div id="top">
+		<ul id="link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="univeristy Introduction.html">U.S.Univeristy</a></li>
+            <li><a href="tution.html">Tution</a></li>
+            <li><a href="schoollife.html">School Life</a></li>
+
+        </ul>
+
+	</div>
+	<nav>
+		<ul id="picture">
+            <li><img src="image/person.JPEG" alt="reload"></li>
+            <li><img src="image/uwec.PNG" alt="reload"></li>
+            <li><img src="image/communicate.PNG" alt="reload"></li>
+            <li><img src="image/time.PNG" alt="reload"></li>
+            <li><img src="image/student.PNG" alt="reload"></li>
+            <li><img src="image/leader.jpg" alt="reload"></li>
+            <li><img src="image/share.JPG" alt="reload"></li>
+            <li><img src="image/hostfriend.JPG" alt="reload"></li>
+            <li><img src="image/academic.JPG" alt="reload"></li>
+            <li><img src="image/snow.jpg" alt="reload"></li>
+
+
+        </ul>
+	</nav>
+
+	<div id="middle">
+		<div id="title">School Life</div>
+		<div id="subtitle">
+			<p id="press">Hostfriend Program</p>
+		</div>
+		<p id="paragraph">&nbsp;&nbsp;&nbsp;&nbsp; UW – Eau Claire is fortunate to have a large community of
+			international students. Allowing international students a 2-3 day homestay with participating community
+			members gives students the opportunity to acclimate to daily American life and discover new customs in a
+			safe environment outside of the University community. Additionally, hosts keep in touch with their student
+			throughout their first semester.</p>
+			<div id="container">
+				<div id="piclist">
+					<div class="picbox">
+						<div class="face front"><img src="image/hostfriend2.JPG" width="170px" height="190px"></div>
+						<div class="face back">
+							<h3>Students celebrate Easter with their host friend</h3>
+						</div>
+					</div>
+					<div class="picbox">
+						<div class="face front"><img src="image/cc.jpg" width="170px" height="190px"></div>
+						<div class="face back">
+							<h3>A student from Malaysia</h3>
+						</div>
+					</div>
+					<div class="picbox">
+						<div class="face front"><img src="image/academic.JPG" width="170px" height="190px"></div>
+						<div class="face back">
+							<h3>Student prensents his poster </h3>
+						</div>
+					</div>
+					<div class="picbox">
+						<div class="face front"><img src="image/band.jpg" width="170px" height="190px"></div>
+						<div class="face back">
+							<h3>Student band show</h3>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="subtitle">
+				<p id="press">Academic Life</p>
+			</div>
+			<p id="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;121 project is a good platform for learning and communication.
+				Students can study abroad through the program. The 121 program of changshu institute of technology is
+				the American university of uwec. The good learning environment and atmosphere there allow students to
+				broaden their horizons. Students of project 121 will study in the United States for two years, meet the
+				degree requirements and graduation requirements of the two universities, and can obtain the bachelor's
+				degree and Chinese graduation certificate from the two universities. Students of the program have a
+				diploma and degree from Chinese and American universities and a good record of entering and leaving the
+				United States. More than 70% of our graduates will study in the top 50 universities in the United
+				States.
+			</p>
+			<div id="container">
+				<div id="piclist">
+					<div class="picbox">
+						<div class="face front"><img src="image/esl300.JPG" width="170px" height="190px"></div>
+						<div class="face back">
+							<h3>Students study ESL class and take a picture with their professor</h3>
+						</div>
+					</div>
+					<div class="picbox">
+						<div class="face front"><img src="image/discussion.jpg" width="170px" height="190px"></div>
+						<div class="face back">
+							<h3>A Chinese student discuss questions with American students</h3>
+						</div>
+					</div>
+					<div class="picbox">
+						<div class="face front"><img src="image/cerca.JPG" width="170px" height="190px"></div>
+						<div class="face back">
+							<h3>Students do CERCA presentation</h3>
+						</div>
+					</div>
+					<div class="picbox">
+						<div class="face front"><img src="image/bus.JPG" width="170px" height="190px"></div>
+						<div class="face back">
+							<h3>Convenient school bus</h3>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+	</div>
+
+	<div id="bottom">
+		<h2 align="center">CIT 121 Program </h2>
+		<h3 align="center">99 Hushan Road | Changshu,China 215500 | 0512-52252110 </h3>
+
+
+
+
+
+
+	</div>
+</body>
+
+</html>
