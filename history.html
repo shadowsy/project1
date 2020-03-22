@@ -5,437 +5,23 @@
     <title>
         Welcom CIT 121 Program
     </title>
-    <style type="text/css">
-        body {
-            margin: 0px;
-            width: 100%;
-            height: 100%;
-        }
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="shortcut icon" href="image/logo.jpeg">
 
-        #top {
-            background-color: darkkhaki;
-            height: 70px;
-            border-style: solid 10px;
-        }
-        #logo{
-            float:right;
-        }
-
-
-        #link {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-            overflow: hidden;
-            /* background-color: darksalmon; */
-        }
-
-        #link li {
-            float: left;
-        }
-
-        #link li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 26px 50px;
-            text-decoration: none;
-        }
-
-        #link li a:hover:not(.active) {
-            background-color: darkslateblue;
-        }
-
-        .active {
-            background-color: #4CAF50;
-        }
-
-
-
-
-
-        @keyframes typing {
-            from {
-                width: 0
-            }
-        }
-
-        @keyframes caret {
-            60% {
-                border-right-color: transparent;
-            }
-        }
-
-        .threesolid {
-            width: 100%;
-            font-size: 70px;
-            color: cornsilk;
-            text-shadow: 0px 1px 0px #c0c0c0,
-                0px 2px 0px #b0b0b0,
-                0px 3px 0px #a0a0a0,
-                0px 4px 0px #909090,
-                0px 5px 10px rgba(0, 0, 0, .9);
-            margin: 10px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            width: 1270px;
-            height: 170px;
-            margin: 0px auto;
-            overflow: hidden;
-            border: 10px black solid;
-        }
-
-        #picture {
-            width: 200%;
-            list-style: none;
-            height: 100%;
-            animation: picmove 8s linear infinite forwards;
-
-        }
-
-        @keyframes picmove {
-            from {
-                transform: translate(0);
-            }
-
-            to {
-                transform: translate(-1270px);
-            }
-        }
-
-        #picture img {
-            width: 250px;
-            height: 170px;
-            float: left;
-            border: 2px black solid;
-        }
-
-        #picture:hover {
-            animation-play-state: paused;
-        }
-
-        #title {
-            font-size: 60px;
-            font-family:cursive;
-            -webkit-text-stroke: 1px cornflowerblue;
-            -webkit-text-fill-color: transparent;
-            height: 85px;
-
-        }
-
-        #subtitle {
-            
-            background-color: darkkhaki;
-            width: 100%;
-            height: 40px;
-            font-family: Wawati SC;
-            margin: 0px;
-          
-        }
-
-        #press {
-            color: transparent;
-            background-color: black;
-            text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
-            -webkit-background-clip: text;
-            font-size: 35px;
-        }
-
-
-        #paragraph {
-            font-size: 20px;
-            font-family: fantasy;
-            background-color: rgb(219, 219, 170);
-            margin: 20px;
-            border: 2px solid;
-            border-radius: 25px;
-        }
-
-        .cd-container {
-            width: 90%;
-            max-width: 1080px;
-            margin: 0 auto;
-            background: rgb(198, 204, 181);
-            padding: 0 10%;
-            border-radius: 2px;
-        }
-
-        .cd-container::after {
-            content: '';
-            display: table;
-            clear: both;
-        }
-
-        #cd-timeline {
-            position: relative;
-            padding: 2em 0;
-            margin-top: 2em;
-            margin-bottom: 2em;
-        }
-
-        #cd-timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 25px;
-            height: 100%;
-            width: 4px;
-            background: #7E57C2;
-        }
-
-        @media only screen and (min-width: 1170px) {
-            #cd-timeline {
-                margin-top: 3em;
-                margin-bottom: 3em;
-            }
-
-            #cd-timeline::before {
-                left: 50%;
-                margin-left: -2px;
-            }
-        }
-
-        .cd-timeline-block {
-            position: relative;
-            margin: 2em 0;
-        }
-
-        .cd-timeline-block:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .cd-timeline-block:first-child {
-            margin-top: 0;
-        }
-
-        .cd-timeline-block:last-child {
-            margin-bottom: 0;
-        }
-
-        @media only screen and (min-width: 1170px) {
-            .cd-timeline-block {
-                margin: 4em 0;
-            }
-
-            .cd-timeline-block:first-child {
-                margin-top: 0;
-            }
-
-            .cd-timeline-block:last-child {
-                margin-bottom: 0;
-            }
-        }
-
-        .cd-timeline-img {
-            position: absolute;
-            top: 8px;
-            left: 12px;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            box-shadow: 0 0 0 4px #7E57C2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-        }
-
-        .cd-timeline-img {
-            background: #673AB7;
-        }
-
-        @media only screen and (min-width: 1170px) {
-            .cd-timeline-img {
-                width: 30px;
-                height: 30px;
-                left: 50%;
-                margin-left: -15px;
-                margin-top: 15px;
-                /* Force Hardware Acceleration in WebKit */
-                -webkit-transform: translateZ(0);
-                -webkit-backface-visibility: hidden;
-            }
-        }
-
-        .cd-timeline-content {
-            position: relative;
-            margin-left: 60px;
-            margin-right: 30px;
-            background: #333C42;
-            border-radius: 2px;
-            padding: 1em;
-        }
-
-        .cd-timeline-content .timeline-content-info {
-            background: #2B343A;
-            padding: 5px 10px;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 12px;
-            box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
-            border-radius: 2px;
-        }
-
-        .cd-timeline-content .timeline-content-info i {
-            margin-right: 5px;
-        }
-
-        .cd-timeline-content .timeline-content-info .timeline-content-info-title,
-        .cd-timeline-content .timeline-content-info .timeline-content-info-date {
-            width: calc(50% - 2px);
-            display: inline-block;
-        }
-
-        @media (max-width: 500px) {
-
-            .cd-timeline-content .timeline-content-info .timeline-content-info-title,
-            .cd-timeline-content .timeline-content-info .timeline-content-info-date {
-                display: block;
-                width: 100%;
-            }
-        }
-
-        .cd-timeline-content .content-skills {
-            font-size: 12px;
-            padding: 0;
-            margin-bottom: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .cd-timeline-content .content-skills li {
-            background: #40484D;
-            border-radius: 2px;
-            display: inline-block;
-            padding: 2px 10px;
-            color: rgba(255, 255, 255, 0.7);
-            margin: 3px 2px;
-            text-align: center;
-            flex-grow: 1;
-        }
-
-        .cd-timeline-content:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .cd-timeline-content h2 {
-            color: rgba(255, 255, 255, 0.9);
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-
-        .cd-timeline-content p,
-        .cd-timeline-content .cd-date {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 13px;
-            font-size: 0.8125rem;
-        }
-
-        .cd-timeline-content .cd-date {
-            display: inline-block;
-        }
-
-        .cd-timeline-content p {
-            margin: 1em 0;
-            line-height: 1.6;
-        }
-
-        .cd-timeline-content::before {
-            content: '';
-            position: absolute;
-            top: 16px;
-            right: 100%;
-            height: 0;
-            width: 0;
-            border: 7px solid transparent;
-            border-right: 7px solid #333C42;
-        }
-
-        @media only screen and (min-width: 768px) {
-            .cd-timeline-content h2 {
-                font-size: 20px;
-                font-size: 1.25rem;
-            }
-
-            .cd-timeline-content p {
-                font-size: 16px;
-                font-size: 1rem;
-            }
-
-            .cd-timeline-content .cd-read-more,
-            .cd-timeline-content .cd-date {
-                font-size: 14px;
-                font-size: 0.875rem;
-            }
-        }
-
-        @media only screen and (min-width: 1170px) {
-            .cd-timeline-content {
-                color: white;
-                margin-left: 0;
-                padding: 1.6em;
-                width: 36%;
-                margin: 0 5%;
-            }
-
-            .cd-timeline-content::before {
-                top: 24px;
-                left: 100%;
-                border-color: transparent;
-                border-left-color: #333C42;
-            }
-
-            .cd-timeline-content .cd-date {
-                position: absolute;
-                width: 100%;
-                left: 122%;
-                top: 6px;
-                font-size: 16px;
-                font-size: 1rem;
-            }
-
-            .cd-timeline-block:nth-child(even) .cd-timeline-content {
-                float: right;
-            }
-
-            .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
-                top: 24px;
-                left: auto;
-                right: 100%;
-                border-color: transparent;
-                border-right-color: #333C42;
-            }
-
-            .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-                float: right;
-            }
-
-            .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
-                left: auto;
-                right: 122%;
-                text-align: right;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <a href="http://www.cslg.edu.cn/">
-        <img id="logo" src="image/logo.jpeg" width="90" height="90"/>
+        <img id="logo" src="image/logo.jpeg" width="90" height="90" />
     </a>
     <div class="threesolid">Welcome CIT 121 Program!</div>
     <div id="top">
         <ul id="link">
             <li><a href="index.html">Home</a></li>
             <li><a href="history.html">History</a></li>
-            <li><a href="univeristy Introduction.html">U.S.Univeristy</a></li>
-            <li><a href="tution.html">Tution</a></li>
+            <li><a href="university.html">U.S.Univeristy</a></li>
+            <li><a href="advantages.html">Advantages</a></li>
             <li><a href="schoollife.html">School Life</a></li>
 
         </ul>
@@ -460,6 +46,9 @@
 
     <div id="middle">
         <div id="title">History</div>
+        <div id="subtitle">
+            <p id="press">Time line</p>
+        </div>
         <section id="cd-timeline" class="cd-container">
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-picture">
@@ -467,16 +56,7 @@
 
                 <div class="cd-timeline-content">
                     <h2>Initial Stage</h2>
-                    <!-- <div class="timeline-content-info">
-                        <span class="timeline-content-info-title">
-                            <i class="fa fa-certificate" aria-hidden="true"></i>
-                            Front End Developer
-                        </span>
-                        <span class="timeline-content-info-date">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            June 2016 - Present
-                        </span>
-                    </div> -->
+
                     <p> Education in China from 2004 to 2008 in the international exchange association and the American
                         association of state universities and college jointly held five consecutive "colleges and
                         universities of China and the United States credit degree recognition seminar", to participate
@@ -490,15 +70,13 @@
                         <li><a href="http://www.cciee121.com/">CCIEE121</a></li>
                         <li><a href="http://en.ceaie.edu.cn/">CEAIE</a></li>
                         <li><a href="https://www.aascu.org/">AASCU</a></li>
-                        <li><a href="http://www.cslg.edu.cn/">CIT</a></li>
-                        <li><a href="https://www.uwec.edu/">UWEC</a></li>
                     </ul>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+                </div>
+            </div>
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-movie">
-                </div> <!-- cd-timeline-img -->
+                </div>
 
                 <div class="cd-timeline-content">
                     <h2>Development Stage</h2>
@@ -509,13 +87,12 @@
                         university teaching plan, and has set up a finished editing" "1 + 2 + 1 the talent cultivation
                         plan of the university undergraduate teaching plan together </p>
                     <span class="cd-date">Dec 2005 </span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+                </div>
+            </div>
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-picture">
-                </div> <!-- cd-timeline-img -->
-
+                </div>
                 <div class="cd-timeline-content">
                     <h2>Jointly Establish a Confucius Institute</h2>
                     <p>To participate in the "1 + 2 + 1 the talent cultivation plan of began to work together to set up
@@ -529,12 +106,12 @@
                         actively contacting and preparing for the establishment of more Confucius institutes in the
                         United States.</p>
                     <span class="cd-date">Oct 11, 2007</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+                </div>
+            </div>
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-location">
-                </div> <!-- cd-timeline-img -->
+                </div>
 
                 <div class="cd-timeline-content">
                     <h2>Communication Stage</h2>
@@ -544,8 +121,8 @@
                         Chinese universities. Meanwhile, since 2005, many American universities have sent teachers to
                         Chinese universities for exchange and study.</p>
                     <span class="cd-date">2008</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+                </div>
+            </div>
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-location">
@@ -562,32 +139,25 @@
                         between Chinese and American universities in tourism, economics and engineering.
                     </p>
                     <span class="cd-date">2012</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+                </div>
+            </div>
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-movie">
-                </div> <!-- cd-timeline-img -->
+                </div>
 
                 <div class="cd-timeline-content">
                     <h2>Now the Situation</h2>
                     <p>From 2001 to 2012, we organized more than 500 exchange visits between Chinese and American
                         universities under the 1 + 2 + 1 talent training program.</p>
                     <span class="cd-date">2019</span>
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-        </section> <!-- cd-timeline -->
-
+                </div>
+            </div>
+        </section>
 
         <div id="bottom">
             <h2 align="center">CIT 121 Program </h2>
             <h3 align="center">99 Hushan Road | Changshu,China 215500 | 0512-52252110 </h3>
-
-
-
-
-
-
         </div>
 </body>
 
