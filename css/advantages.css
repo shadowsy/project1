@@ -1,0 +1,60 @@
+div.img {
+    margin: 2px;
+    border: 1px solid #000000;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.img img {
+    display: flexbox;
+    margin: 10px;
+    border: 1px solid #ffffff;
+}
+
+
+
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 240px;
+    margin: 2px;
+}
+
+#photogallery {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(171, 211, 235);
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+
+
+}
+
+.caret::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    margin-bottom: -2px;
+    margin-left: -2px;
+
+
+    animation: blink-caret .5s step-end infinite;
+}
+
+.typing {
+    font-size: 35px;
+    font-family: monospace;
+    background-color: darkkhaki;
+    margin: 10px;
+
+}
+
+@keyframes blink-caret {
+    50% {
+        opacity: 0;
+    }
+}
