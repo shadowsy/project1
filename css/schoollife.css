@@ -1,4 +1,4 @@
-#piclist {
+.piclist {
     width: 760px;
     height: 220px;
 }
@@ -39,7 +39,7 @@
     text-align: center;
 }
 
-#container {
+.container {
     display: flex;
     justify-content: center;
     background-color: rgb(171, 211, 235);
