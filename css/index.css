@@ -9,7 +9,6 @@ div.img {
 }
 
 div.img img {
-    display: flexbox;
     margin: 10px;
     border: 1px solid #ffffff;
 }

@@ -9,7 +9,8 @@ body {
     background-color: darkkhaki;
     height: 65px;
     margin: 20px;
-    border-style: solid 10px;
+    border-style: solid;
+    border:10px;
 }
 #logo{
     float:right;
@@ -126,19 +127,16 @@ nav {
 
 .subtitle {
     background-color: darkkhaki;
-    /* font-size: 50px ; */
-    height: 45px;
+  
+    height: 60px;
     font-family:monospace;
     margin: 20px;
    
 }
 
 .press { 
-    color: transparent;
-    background-color: black;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
-    background-clip:text;
-    -webkit-background-clip: text;
+    text-shadow: 5px 5px 5px black, 0px 0px 2px black; 
+    color: white;
     font-size: 45px;
 }
 
@@ -150,6 +148,7 @@ nav {
     margin: 20px;
     border: 2px solid;
     border-radius: 25px;
+    
 }
 #bottom{
     text-align: center;
