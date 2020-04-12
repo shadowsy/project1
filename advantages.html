@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="shortcut icon" href="image/logo.jpeg">
+    <script rel="javascript" src="js/typing.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 </head>
@@ -30,7 +31,7 @@
         </ul>
     </div>
     <nav>
-         <ul id="picture">
+        <ul id="picture">
             <li><img src="image/person.JPEG" alt="Chancellor Jim Schmidt delivered a speech"></li>
             <li><img src="image/uwec.PNG" alt="UWEC Centennial Hall"></li>
             <li><img src="image/communicate.PNG" alt="CIT and UWEC sign agreement"></li>
@@ -39,7 +40,8 @@
             </li>
             <li><img src="image/leader.jpg" alt="The leaders of UWEC and CIT"></li>
             <li><img src="image/share.JPG" alt="Chinese students celebrate Christmas with American family"></li>
-            <li><img src="image/hostfriend.JPG" alt="Chinese students participate hostfriend program with local family"></li>
+            <li><img src="image/hostfriend.JPG" alt="Chinese students participate hostfriend program with local family">
+            </li>
             <li><img src="image/academic.JPG" alt="Student present his poster"></li>
             <li><img src="image/snow.jpg" alt="The snow of UWEC"></li>
 
@@ -78,75 +80,27 @@
             awarded scholarships. More than 70% of our graduates are studying in the top 50 universities in the United
             States. After graduation, most of the project students have worked in financial institutions, banks and
             Fortune 500 companies. Some graduates obtain a US work visa and work in the US.</p>
-            
-        <div class="typing">
-            <span class="typing-text"> IF YOU WANT TO JOIN US......</span>
-            <i class="caret"></i>
+        <div class="subtitle">
+            <p id="typing">
+                <a href="form.html" class="typewrite" data-period="2000"
+                    data-type='[ "If you are interested in our program", "If you want to apply for our program", "Please click me!", "I am a form link!." ]'>
+                    <span class="wrap"></span>
+                </a>
+            </p>
         </div>
-        <script>
-            var box = document.getElementsByClassName('typing-text')[0];
-            var str = box.innerText;
-            var i = 0;
-            box.innerText = '';
-            var typing = setInterval(function () {
-                box.innerText += str[i++];
-                i >= str.length && clearInterval(typing);
-            }, 200);
-        </script>
-      
-        <form  method="post" class="basic-grey">
-            <h1>Contact Form
-                <span>Please fill all the texts in the fields.</span>
-            </h1>
-
-            <label>
-                <span>Your Name :</span>
-                <input id="name" type="text" name="name" placeholder="Your Full Name" />
-            </label>
-            <label>
-                <span>Your Email :</span>
-                <input id="email" type="email" name="email" placeholder="Valid Email Address" />
-            </label>
-
-            <label>
-                <span>Message :</span>
-                <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
-            </label>
-            <label>
-                <span>Subject :</span><select name="selection">
-                    <option value="Choose one of subjects">Choose one of subjects</option>
-                    <option value="Tution Question">Tution Question</option>
-                    <option value="Program Question">Program Question</option>
-                    <option value="General Question">General Question</option>
-                </select>
-            </label>
-            <label>
-                <span>&nbsp;</span>
-                <input type="button" class="button" value="Send" />
-            </label>
-        </form>
-
     </div>
 
 
+    <div id="bottom">
+        <h2>CIT 121 Program </h2>
+        <h3>99 Hushan Road | Changshu,China 215500 | 0512-52252110 </h3>
 
 
 
 
 
 
-
-
-        <div id="bottom">
-            <h2>CIT 121 Program </h2>
-            <h3>99 Hushan Road | Changshu,China 215500 | 0512-52252110 </h3>
-
-
-
-
-
-
-        </div>
+    </div>
 
 </body>
 

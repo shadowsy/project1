@@ -1,29 +1,31 @@
-
-
-.caret::after {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 1em;
-    margin-bottom: -2px;
-    margin-left: -2px;
-
-
-    animation: blink-caret .5s step-end infinite;
-}
-
-.typing {
-    font-size: 35px;
-    font-family: monospace;
+#typing {
     background-color: darkkhaki;
+    font-size: 45px;
     margin: 20px;
-   
- 
+
 
 }
 
-@keyframes blink-caret {
-    50% {
-        opacity: 0;
-    }
+
+a:link {
+    color: rgb(197, 243, 239);
+    text-decoration: none;
+}
+
+a:visited {
+    /* color:cornsilk; */
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
 }

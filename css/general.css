@@ -1,3 +1,31 @@
+@media screen and (max-width: 800px) {
+    #top {
+        width: 20%;
+        display: inline-block;
+    }
+
+    #top a:link,
+    #top a:visited {
+        display: block;
+        font-weight: bold;
+        color: #FFFFFF;
+        background-color: darkkhaki;
+        width: 150px;
+        text-align: center;
+        padding: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #top a:hover,
+    #top a:active {
+        background-color: darkkhaki;
+    }
+
+
+}
+
+
 body {
     margin: 0px;
     width: 100%;
@@ -11,6 +39,7 @@ body {
     margin: 20px;
     border-style: solid;
     border:10px;
+    text-align: center;
 }
 #logo{
     float:right;
@@ -19,11 +48,11 @@ body {
 
 #link {
     padding: 0;
-    /* margin: 10px; */
+    
     list-style-type: none;
     overflow: hidden;
-    
-    /* background-color: darksalmon; */
+    text-align: center;
+
 }
 
 #link li {
@@ -45,7 +74,7 @@ body {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: darkslateblue;
 }
 
 @keyframes typing {
@@ -120,7 +149,7 @@ nav {
     font-family: cursive;
     -webkit-text-stroke: 1px cornflowerblue;
     -webkit-text-fill-color: transparent;
-    height: 75x;
+    height: 75px;
     margin: 20px;
 
 }
@@ -148,6 +177,7 @@ nav {
     margin: 20px;
     border: 2px solid;
     border-radius: 25px;
+    padding: 40px;
     
 }
 #bottom{
