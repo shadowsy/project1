@@ -24,7 +24,9 @@
 
 
 }
-
+a{
+    font-family: sans-serif;
+}
 
 body {
     margin: 0px;
@@ -146,7 +148,7 @@ nav {
 
 #title {
     font-size: 60px;
-    font-family: cursive;
+    font-family: sans-serif;
     -webkit-text-stroke: 1px cornflowerblue;
     -webkit-text-fill-color: transparent;
     height: 75px;
